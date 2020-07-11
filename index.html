@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Sondaggio sulla fede calcistica a Milano⚽</h1>
+        <p id="description">Aiutaci a scoprire qual è la squadra più tifata dai milanesi💪</p>
+    </header>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Nome</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Inserisci il tuo nome"
+              required
+            />
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Inserisci il tuo indirizzo Email"
+              required
+            />
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="age">Età</label>
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="0"
+              max="130"
+              placeholder="Quanti anni hai?"
+              required
+            />
+        </div>
+        <div class="form-group">
+            <p>Qual è il tuo impiego attuale?</p>
+            <select id="dropdown" name="role" required>
+              <option disabled selected value>Seleziona un'opzione</option>
+              <option value="student">Studente</option>
+              <option value="job">Lavoro</option>
+              <option value="retired">In pensione</option>
+              <option value="other">Altro</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Qual è la tua squadra del cuore?</p>
+            <label>
+                <input
+                  type="radio"
+                  value="milan"
+                  name="favorite-team"
+                  class="input-radio"
+                />Milan
+            </label>
+            <label>
+                <input
+                  type="radio"
+                  value="inter"
+                  name="favorite-team"
+                  class="input-radio"
+                />Inter
+            </label>          
+            <label>
+                <input
+                  type="radio"
+                  value="other"
+                  name="favorite-team"
+                  class="input-radio"
+                  
+                />Altra
+            </label>
+        <div class="form-group">
+            <p>Dove guardi le partite della tua squadra preferita?</p>
+            <label>
+                <input
+                  type="checkbox"
+                  value="home"
+                  class="input-checkbox"
+                  
+                />Casa
+            </label>
+            <label>
+                <input
+                  type="checkbox"
+                  value="stadium"
+                  class="input-checkbox"
+                />Stadio
+            </label>
+            <label>
+                <input
+                  type="checkbox"
+                  value="with-friends"
+                  class="input-checkbox"
+                />Fuori con amici
+            </label>
+            <label>
+                <input
+                  type="checkbox"
+                  value="other"
+                  class="input-checkbox"
+                />Altro
+            </label>
+        </div>
+        <div class="form-group">
+            <p id="comments">Commenti</p>
+            <textarea placeholder="Inserisci qui il tuo commento"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit">Invia                
+            </button>
+        </div>
+
+            
+        </div>
+        
+
+
+
+
+    </form>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
